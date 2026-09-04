@@ -1,0 +1,19 @@
+rules_version = '2';
+
+// ข้อมูลทุกอย่างอยู่ใต้ users/{uid} และอ่าน/เขียนได้เฉพาะเจ้าของบัญชีเท่านั้น
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+
+      match /{document=**} {
+        allow read, write: if request.auth != null && request.auth.uid == uid;
+      }
+    }
+
+    // ปิดทุกอย่างที่เหลือ
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
