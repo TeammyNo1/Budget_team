@@ -1,0 +1,1242 @@
+{
+  "meta": {
+    "appName": "Beach Budget",
+    "demoToday": "2026-08-31",
+    "currency": "THB",
+    "note": "ข้อมูลทดสอบทั้งหมด ไม่ใช่ข้อมูลจริงของใคร",
+    "owner": {
+      "name": "ธนบดี ส.",
+      "email": "demo@beachbudget.dev"
+    }
+  },
+  "settings": {
+    "salary": 100000,
+    "socialSecurity": 875,
+    "otherDeduction": 8500,
+    "foodWorkday": 350,
+    "foodHoliday": 600,
+    "payday": 25,
+    "lines": [
+      {
+        "id": "p_rent",
+        "label": "ค่าเช่าคอนโด",
+        "categoryId": "rent",
+        "amount": 18000
+      },
+      {
+        "id": "p_elec",
+        "label": "ค่าไฟ",
+        "categoryId": "electric",
+        "amount": 2800,
+        "minAmount": 2200,
+        "maxAmount": 3500
+      },
+      {
+        "id": "p_water",
+        "label": "ค่าน้ำ",
+        "categoryId": "water",
+        "amount": 350
+      },
+      {
+        "id": "p_net",
+        "label": "อินเทอร์เน็ตบ้าน",
+        "categoryId": "internet",
+        "amount": 799
+      },
+      {
+        "id": "p_phone",
+        "label": "ค่าโทรศัพท์",
+        "categoryId": "phone",
+        "amount": 599
+      },
+      {
+        "id": "p_transport",
+        "label": "ค่าเดินทาง / น้ำมัน",
+        "categoryId": "transport",
+        "amount": 2500,
+        "minAmount": 1800,
+        "maxAmount": 3200
+      },
+      {
+        "id": "p_laundry",
+        "label": "ส่งซัก + รีด",
+        "categoryId": "laundry",
+        "amount": 1600
+      },
+      {
+        "id": "p_grocery",
+        "label": "ของใช้เข้าบ้าน",
+        "categoryId": "groceries",
+        "amount": 3600,
+        "minAmount": 3000,
+        "maxAmount": 4200
+      },
+      {
+        "id": "p_ins",
+        "label": "เบี้ยประกันชีวิต",
+        "categoryId": "insurance",
+        "amount": 3000
+      },
+      {
+        "id": "p_gym",
+        "label": "ฟิตเนส",
+        "categoryId": "fitness",
+        "amount": 1200
+      },
+      {
+        "id": "p_save",
+        "label": "เก็บออม / ลงทุน",
+        "categoryId": "saving",
+        "amount": 10000
+      }
+    ]
+  },
+  "debts": [
+    {
+      "id": "d1",
+      "name": "ผ่อนรถ",
+      "principal": 480000,
+      "paid": 186400,
+      "monthlyPlan": 9800,
+      "note": "Honda City ผ่อน 48 งวด"
+    },
+    {
+      "id": "d2",
+      "name": "บัตรเครดิต",
+      "principal": 45000,
+      "paid": 25000,
+      "monthlyPlan": 5000,
+      "note": "ผ่อน 0% ค่าโน้ตบุ๊ก"
+    },
+    {
+      "id": "d3",
+      "name": "กยศ.",
+      "principal": 120000,
+      "paid": 118000,
+      "monthlyPlan": 2000,
+      "note": "เหลืออีกงวดเดียว"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "t0001",
+      "type": "expense",
+      "amount": 18000,
+      "categoryId": "rent",
+      "date": "2026-07-01",
+      "note": "ค่าเช่าคอนโด ก.ค.",
+      "slip": true,
+      "debtId": null
+    },
+    {
+      "id": "t0002",
+      "type": "expense",
+      "amount": 320,
+      "categoryId": "food",
+      "date": "2026-07-01",
+      "note": "สลัด + สมูทตี้",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0003",
+      "type": "expense",
+      "amount": 1200,
+      "categoryId": "fitness",
+      "date": "2026-07-02",
+      "note": "ค่าฟิตเนสรายเดือน",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0004",
+      "type": "expense",
+      "amount": 320,
+      "categoryId": "food",
+      "date": "2026-07-02",
+      "note": "ก๋วยเตี๋ยว + ขนม",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0005",
+      "type": "expense",
+      "amount": 3000,
+      "categoryId": "insurance",
+      "date": "2026-07-03",
+      "note": "เบี้ยประกันชีวิต",
+      "slip": true,
+      "debtId": null
+    },
+    {
+      "id": "t0006",
+      "type": "expense",
+      "amount": 290,
+      "categoryId": "food",
+      "date": "2026-07-03",
+      "note": "ข้าวกลางวันออฟฟิศ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0007",
+      "type": "expense",
+      "amount": 400,
+      "categoryId": "laundry",
+      "date": "2026-07-04",
+      "note": "ส่งซัก + รีด",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0008",
+      "type": "expense",
+      "amount": 850,
+      "categoryId": "food",
+      "date": "2026-07-04",
+      "note": "สั่งเดลิเวอรี",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0009",
+      "type": "expense",
+      "amount": 799,
+      "categoryId": "internet",
+      "date": "2026-07-05",
+      "note": "อินเทอร์เน็ตบ้าน",
+      "slip": true,
+      "debtId": null
+    },
+    {
+      "id": "t0010",
+      "type": "expense",
+      "amount": 599,
+      "categoryId": "phone",
+      "date": "2026-07-05",
+      "note": "ค่าโทรศัพท์รายเดือน",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0011",
+      "type": "expense",
+      "amount": 480,
+      "categoryId": "food",
+      "date": "2026-07-05",
+      "note": "คาเฟ่ + บรันช์",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0012",
+      "type": "expense",
+      "amount": 1980,
+      "categoryId": "groceries",
+      "date": "2026-07-06",
+      "note": "ซื้อของเข้าบ้าน Makro",
+      "slip": true,
+      "debtId": null
+    },
+    {
+      "id": "t0013",
+      "type": "expense",
+      "amount": 410,
+      "categoryId": "food",
+      "date": "2026-07-06",
+      "note": "ข้าวกลางวันออฟฟิศ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0014",
+      "type": "expense",
+      "amount": 2950,
+      "categoryId": "electric",
+      "date": "2026-07-07",
+      "note": "ค่าไฟ ก.ค.",
+      "slip": true,
+      "debtId": null
+    },
+    {
+      "id": "t0015",
+      "type": "expense",
+      "amount": 380,
+      "categoryId": "water",
+      "date": "2026-07-07",
+      "note": "ค่าน้ำ ก.ค.",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0016",
+      "type": "expense",
+      "amount": 900,
+      "categoryId": "transport",
+      "date": "2026-07-08",
+      "note": "เติมน้ำมัน",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0017",
+      "type": "expense",
+      "amount": 350,
+      "categoryId": "food",
+      "date": "2026-07-08",
+      "note": "ก๋วยเตี๋ยว + ขนม",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0018",
+      "type": "expense",
+      "amount": 380,
+      "categoryId": "food",
+      "date": "2026-07-10",
+      "note": "ก๋วยเตี๋ยว + ขนม",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0019",
+      "type": "expense",
+      "amount": 400,
+      "categoryId": "laundry",
+      "date": "2026-07-11",
+      "note": "ส่งซัก + รีด",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0020",
+      "type": "expense",
+      "amount": 480,
+      "categoryId": "food",
+      "date": "2026-07-11",
+      "note": "คาเฟ่ + บรันช์",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0021",
+      "type": "expense",
+      "amount": 890,
+      "categoryId": "health",
+      "date": "2026-07-12",
+      "note": "ตรวจฟัน",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0022",
+      "type": "expense",
+      "amount": 850,
+      "categoryId": "food",
+      "date": "2026-07-12",
+      "note": "ชาบูกับเพื่อน",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0023",
+      "type": "expense",
+      "amount": 380,
+      "categoryId": "food",
+      "date": "2026-07-13",
+      "note": "ตามสั่ง + น้ำ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0024",
+      "type": "expense",
+      "amount": 450,
+      "categoryId": "transport",
+      "date": "2026-07-14",
+      "note": "แท็กซี่ไปสนามบิน",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0025",
+      "type": "expense",
+      "amount": 410,
+      "categoryId": "food",
+      "date": "2026-07-14",
+      "note": "ข้าวกลางวันออฟฟิศ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0026",
+      "type": "income",
+      "amount": 15000,
+      "categoryId": "freelance",
+      "date": "2026-07-15",
+      "note": "งานฟรีแลนซ์ทำเว็บ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0027",
+      "type": "expense",
+      "amount": 350,
+      "categoryId": "food",
+      "date": "2026-07-15",
+      "note": "ข้าว + กาแฟ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0028",
+      "type": "expense",
+      "amount": 2400,
+      "categoryId": "fun",
+      "date": "2026-07-16",
+      "note": "ไปทะเลหัวหิน 2 วัน",
+      "slip": true,
+      "debtId": null
+    },
+    {
+      "id": "t0029",
+      "type": "expense",
+      "amount": 320,
+      "categoryId": "food",
+      "date": "2026-07-16",
+      "note": "ข้าวกลางวันออฟฟิศ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0030",
+      "type": "expense",
+      "amount": 320,
+      "categoryId": "food",
+      "date": "2026-07-17",
+      "note": "สลัด + สมูทตี้",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0031",
+      "type": "expense",
+      "amount": 400,
+      "categoryId": "laundry",
+      "date": "2026-07-18",
+      "note": "ส่งซัก + รีด",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0032",
+      "type": "expense",
+      "amount": 700,
+      "categoryId": "food",
+      "date": "2026-07-18",
+      "note": "สั่งเดลิเวอรี",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0033",
+      "type": "expense",
+      "amount": 1420,
+      "categoryId": "groceries",
+      "date": "2026-07-19",
+      "note": "ของสด + ของใช้",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0034",
+      "type": "income",
+      "amount": 3200,
+      "categoryId": "dividend",
+      "date": "2026-07-20",
+      "note": "ปันผลกองทุน SSF",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0035",
+      "type": "expense",
+      "amount": 350,
+      "categoryId": "food",
+      "date": "2026-07-21",
+      "note": "ข้าว + กาแฟ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0036",
+      "type": "expense",
+      "amount": 900,
+      "categoryId": "transport",
+      "date": "2026-07-22",
+      "note": "เติมน้ำมัน",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0037",
+      "type": "expense",
+      "amount": 320,
+      "categoryId": "food",
+      "date": "2026-07-22",
+      "note": "สลัด + สมูทตี้",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0038",
+      "type": "expense",
+      "amount": 2650,
+      "categoryId": "shopping",
+      "date": "2026-07-23",
+      "note": "รองเท้าวิ่งคู่ใหม่",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0039",
+      "type": "expense",
+      "amount": 290,
+      "categoryId": "food",
+      "date": "2026-07-23",
+      "note": "สลัด + สมูทตี้",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0040",
+      "type": "expense",
+      "amount": 410,
+      "categoryId": "food",
+      "date": "2026-07-24",
+      "note": "ข้าว + กาแฟ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0041",
+      "type": "income",
+      "amount": 100000,
+      "categoryId": "salary",
+      "date": "2026-07-25",
+      "note": "เงินเดือน ก.ค.",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0042",
+      "type": "expense",
+      "amount": 875,
+      "categoryId": "other_expense",
+      "date": "2026-07-25",
+      "note": "หักประกันสังคม",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0043",
+      "type": "expense",
+      "amount": 8500,
+      "categoryId": "other_expense",
+      "date": "2026-07-25",
+      "note": "ภาษีหัก ณ ที่จ่าย",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0044",
+      "type": "expense",
+      "amount": 400,
+      "categoryId": "laundry",
+      "date": "2026-07-25",
+      "note": "ส่งซัก + รีด",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0045",
+      "type": "expense",
+      "amount": 700,
+      "categoryId": "food",
+      "date": "2026-07-25",
+      "note": "ปิ้งย่างวันหยุด",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0046",
+      "type": "expense",
+      "amount": 9800,
+      "categoryId": "debt",
+      "date": "2026-07-26",
+      "note": "ผ่อนรถ งวดเดือนก.ค.",
+      "slip": true,
+      "debtId": "d1"
+    },
+    {
+      "id": "t0047",
+      "type": "expense",
+      "amount": 5000,
+      "categoryId": "debt",
+      "date": "2026-07-26",
+      "note": "จ่ายบัตรเครดิต",
+      "slip": true,
+      "debtId": "d2"
+    },
+    {
+      "id": "t0048",
+      "type": "expense",
+      "amount": 2000,
+      "categoryId": "debt",
+      "date": "2026-07-26",
+      "note": "คืน กยศ.",
+      "slip": false,
+      "debtId": "d3"
+    },
+    {
+      "id": "t0049",
+      "type": "expense",
+      "amount": 700,
+      "categoryId": "food",
+      "date": "2026-07-26",
+      "note": "ชาบูกับเพื่อน",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0050",
+      "type": "expense",
+      "amount": 320,
+      "categoryId": "food",
+      "date": "2026-07-27",
+      "note": "ข้าว + กาแฟ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0051",
+      "type": "expense",
+      "amount": 10000,
+      "categoryId": "saving",
+      "date": "2026-07-28",
+      "note": "โอนเข้าพอร์ตลงทุน",
+      "slip": true,
+      "debtId": null
+    },
+    {
+      "id": "t0052",
+      "type": "expense",
+      "amount": 320,
+      "categoryId": "food",
+      "date": "2026-07-28",
+      "note": "ข้าวกลางวันออฟฟิศ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0053",
+      "type": "expense",
+      "amount": 350,
+      "categoryId": "food",
+      "date": "2026-07-30",
+      "note": "ก๋วยเตี๋ยว + ขนม",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0054",
+      "type": "expense",
+      "amount": 410,
+      "categoryId": "food",
+      "date": "2026-07-31",
+      "note": "ข้าว + กาแฟ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0055",
+      "type": "expense",
+      "amount": 18000,
+      "categoryId": "rent",
+      "date": "2026-08-01",
+      "note": "ค่าเช่าคอนโด ส.ค.",
+      "slip": true,
+      "debtId": null
+    },
+    {
+      "id": "t0056",
+      "type": "expense",
+      "amount": 480,
+      "categoryId": "food",
+      "date": "2026-08-01",
+      "note": "ปิ้งย่างวันหยุด",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0057",
+      "type": "expense",
+      "amount": 1200,
+      "categoryId": "fitness",
+      "date": "2026-08-02",
+      "note": "ค่าฟิตเนสรายเดือน",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0058",
+      "type": "expense",
+      "amount": 560,
+      "categoryId": "food",
+      "date": "2026-08-02",
+      "note": "คาเฟ่ + บรันช์",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0059",
+      "type": "expense",
+      "amount": 3000,
+      "categoryId": "insurance",
+      "date": "2026-08-03",
+      "note": "เบี้ยประกันชีวิต",
+      "slip": true,
+      "debtId": null
+    },
+    {
+      "id": "t0060",
+      "type": "expense",
+      "amount": 410,
+      "categoryId": "food",
+      "date": "2026-08-03",
+      "note": "ก๋วยเตี๋ยว + ขนม",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0061",
+      "type": "expense",
+      "amount": 400,
+      "categoryId": "laundry",
+      "date": "2026-08-04",
+      "note": "ส่งซัก + รีด",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0062",
+      "type": "expense",
+      "amount": 350,
+      "categoryId": "food",
+      "date": "2026-08-04",
+      "note": "ข้าว + กาแฟ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0063",
+      "type": "expense",
+      "amount": 799,
+      "categoryId": "internet",
+      "date": "2026-08-05",
+      "note": "อินเทอร์เน็ตบ้าน",
+      "slip": true,
+      "debtId": null
+    },
+    {
+      "id": "t0064",
+      "type": "expense",
+      "amount": 599,
+      "categoryId": "phone",
+      "date": "2026-08-05",
+      "note": "ค่าโทรศัพท์รายเดือน",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0065",
+      "type": "expense",
+      "amount": 320,
+      "categoryId": "food",
+      "date": "2026-08-05",
+      "note": "ก๋วยเตี๋ยว + ขนม",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0066",
+      "type": "expense",
+      "amount": 1980,
+      "categoryId": "groceries",
+      "date": "2026-08-06",
+      "note": "ซื้อของเข้าบ้าน Makro",
+      "slip": true,
+      "debtId": null
+    },
+    {
+      "id": "t0067",
+      "type": "expense",
+      "amount": 350,
+      "categoryId": "food",
+      "date": "2026-08-06",
+      "note": "สลัด + สมูทตี้",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0068",
+      "type": "expense",
+      "amount": 2760,
+      "categoryId": "electric",
+      "date": "2026-08-07",
+      "note": "ค่าไฟ ส.ค.",
+      "slip": true,
+      "debtId": null
+    },
+    {
+      "id": "t0069",
+      "type": "expense",
+      "amount": 340,
+      "categoryId": "water",
+      "date": "2026-08-07",
+      "note": "ค่าน้ำ ส.ค.",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0070",
+      "type": "expense",
+      "amount": 620,
+      "categoryId": "transport",
+      "date": "2026-08-08",
+      "note": "เติมน้ำมัน",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0071",
+      "type": "expense",
+      "amount": 480,
+      "categoryId": "food",
+      "date": "2026-08-08",
+      "note": "คาเฟ่ + บรันช์",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0072",
+      "type": "expense",
+      "amount": 410,
+      "categoryId": "food",
+      "date": "2026-08-10",
+      "note": "สลัด + สมูทตี้",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0073",
+      "type": "expense",
+      "amount": 400,
+      "categoryId": "laundry",
+      "date": "2026-08-11",
+      "note": "ส่งซัก + รีด",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0074",
+      "type": "expense",
+      "amount": 410,
+      "categoryId": "food",
+      "date": "2026-08-11",
+      "note": "สลัด + สมูทตี้",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0075",
+      "type": "expense",
+      "amount": 890,
+      "categoryId": "health",
+      "date": "2026-08-12",
+      "note": "ตรวจฟัน",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0076",
+      "type": "expense",
+      "amount": 350,
+      "categoryId": "food",
+      "date": "2026-08-12",
+      "note": "สลัด + สมูทตี้",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0077",
+      "type": "expense",
+      "amount": 350,
+      "categoryId": "food",
+      "date": "2026-08-13",
+      "note": "ตามสั่ง + น้ำ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0078",
+      "type": "expense",
+      "amount": 450,
+      "categoryId": "transport",
+      "date": "2026-08-14",
+      "note": "แท็กซี่ไปสนามบิน",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0079",
+      "type": "expense",
+      "amount": 410,
+      "categoryId": "food",
+      "date": "2026-08-14",
+      "note": "ข้าว + กาแฟ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0080",
+      "type": "income",
+      "amount": 18000,
+      "categoryId": "freelance",
+      "date": "2026-08-15",
+      "note": "งานฟรีแลนซ์ทำเว็บ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0081",
+      "type": "expense",
+      "amount": 620,
+      "categoryId": "food",
+      "date": "2026-08-15",
+      "note": "คาเฟ่ + บรันช์",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0082",
+      "type": "expense",
+      "amount": 3200,
+      "categoryId": "fun",
+      "date": "2026-08-16",
+      "note": "ไปทะเลหัวหิน 2 วัน",
+      "slip": true,
+      "debtId": null
+    },
+    {
+      "id": "t0083",
+      "type": "expense",
+      "amount": 850,
+      "categoryId": "food",
+      "date": "2026-08-16",
+      "note": "สั่งเดลิเวอรี",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0084",
+      "type": "expense",
+      "amount": 380,
+      "categoryId": "food",
+      "date": "2026-08-17",
+      "note": "ข้าวกลางวันออฟฟิศ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0085",
+      "type": "expense",
+      "amount": 400,
+      "categoryId": "laundry",
+      "date": "2026-08-18",
+      "note": "ส่งซัก + รีด",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0086",
+      "type": "expense",
+      "amount": 320,
+      "categoryId": "food",
+      "date": "2026-08-18",
+      "note": "ก๋วยเตี๋ยว + ขนม",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0087",
+      "type": "expense",
+      "amount": 1420,
+      "categoryId": "groceries",
+      "date": "2026-08-19",
+      "note": "ของสด + ของใช้",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0088",
+      "type": "expense",
+      "amount": 350,
+      "categoryId": "food",
+      "date": "2026-08-19",
+      "note": "สลัด + สมูทตี้",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0089",
+      "type": "income",
+      "amount": 3200,
+      "categoryId": "dividend",
+      "date": "2026-08-20",
+      "note": "ปันผลกองทุน SSF",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0090",
+      "type": "expense",
+      "amount": 410,
+      "categoryId": "food",
+      "date": "2026-08-20",
+      "note": "สลัด + สมูทตี้",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0091",
+      "type": "expense",
+      "amount": 350,
+      "categoryId": "food",
+      "date": "2026-08-21",
+      "note": "ข้าวกลางวันออฟฟิศ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0092",
+      "type": "expense",
+      "amount": 620,
+      "categoryId": "transport",
+      "date": "2026-08-22",
+      "note": "เติมน้ำมัน",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0093",
+      "type": "expense",
+      "amount": 850,
+      "categoryId": "food",
+      "date": "2026-08-22",
+      "note": "ชาบูกับเพื่อน",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0094",
+      "type": "expense",
+      "amount": 2650,
+      "categoryId": "shopping",
+      "date": "2026-08-23",
+      "note": "รองเท้าวิ่งคู่ใหม่",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0095",
+      "type": "expense",
+      "amount": 620,
+      "categoryId": "food",
+      "date": "2026-08-23",
+      "note": "ชาบูกับเพื่อน",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0096",
+      "type": "income",
+      "amount": 100000,
+      "categoryId": "salary",
+      "date": "2026-08-25",
+      "note": "เงินเดือน ส.ค.",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0097",
+      "type": "expense",
+      "amount": 875,
+      "categoryId": "other_expense",
+      "date": "2026-08-25",
+      "note": "หักประกันสังคม",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0098",
+      "type": "expense",
+      "amount": 8500,
+      "categoryId": "other_expense",
+      "date": "2026-08-25",
+      "note": "ภาษีหัก ณ ที่จ่าย",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0099",
+      "type": "expense",
+      "amount": 400,
+      "categoryId": "laundry",
+      "date": "2026-08-25",
+      "note": "ส่งซัก + รีด",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0100",
+      "type": "expense",
+      "amount": 350,
+      "categoryId": "food",
+      "date": "2026-08-25",
+      "note": "ข้าวกลางวันออฟฟิศ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0101",
+      "type": "expense",
+      "amount": 9800,
+      "categoryId": "debt",
+      "date": "2026-08-26",
+      "note": "ผ่อนรถ งวดเดือนส.ค.",
+      "slip": true,
+      "debtId": "d1"
+    },
+    {
+      "id": "t0102",
+      "type": "expense",
+      "amount": 5000,
+      "categoryId": "debt",
+      "date": "2026-08-26",
+      "note": "จ่ายบัตรเครดิต",
+      "slip": true,
+      "debtId": "d2"
+    },
+    {
+      "id": "t0103",
+      "type": "expense",
+      "amount": 2000,
+      "categoryId": "debt",
+      "date": "2026-08-26",
+      "note": "คืน กยศ.",
+      "slip": false,
+      "debtId": "d3"
+    },
+    {
+      "id": "t0104",
+      "type": "expense",
+      "amount": 410,
+      "categoryId": "food",
+      "date": "2026-08-27",
+      "note": "ก๋วยเตี๋ยว + ขนม",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0105",
+      "type": "expense",
+      "amount": 10000,
+      "categoryId": "saving",
+      "date": "2026-08-28",
+      "note": "โอนเข้าพอร์ตลงทุน",
+      "slip": true,
+      "debtId": null
+    },
+    {
+      "id": "t0106",
+      "type": "expense",
+      "amount": 320,
+      "categoryId": "food",
+      "date": "2026-08-28",
+      "note": "ตามสั่ง + น้ำ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0107",
+      "type": "expense",
+      "amount": 850,
+      "categoryId": "food",
+      "date": "2026-08-29",
+      "note": "ปิ้งย่างวันหยุด",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0108",
+      "type": "expense",
+      "amount": 480,
+      "categoryId": "food",
+      "date": "2026-08-30",
+      "note": "คาเฟ่ + บรันช์",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0109",
+      "type": "expense",
+      "amount": 320,
+      "categoryId": "food",
+      "date": "2026-08-31",
+      "note": "สลัด + สมูทตี้",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0110",
+      "type": "expense",
+      "amount": 350,
+      "categoryId": "food",
+      "date": "2026-09-01",
+      "note": "ข้าวกลางวันออฟฟิศ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0111",
+      "type": "expense",
+      "amount": 380,
+      "categoryId": "food",
+      "date": "2026-09-02",
+      "note": "ตามสั่ง + น้ำ",
+      "slip": false,
+      "debtId": null
+    },
+    {
+      "id": "t0112",
+      "type": "expense",
+      "amount": 620,
+      "categoryId": "transport",
+      "date": "2026-09-02",
+      "note": "เติมน้ำมัน",
+      "slip": false,
+      "debtId": null
+    }
+  ]
+}

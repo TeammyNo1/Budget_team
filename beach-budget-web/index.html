@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th" data-theme-default="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beach Budget — เว็บบันทึกรายรับรายจ่าย</title>
+<meta name="description" content="เว็บแอปบันทึกรายรับ-รายจ่ายส่วนตัว ธีมชายหาด สร้างด้วย HTML/CSS/JavaScript ล้วน ข้อมูลเป็น JSON ไม่ต้อง build">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0E5C73">
+
+<!-- Open Graph สำหรับแชร์ลิงก์ -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Beach Budget — เว็บบันทึกรายรับรายจ่าย">
+<meta property="og:description" content="Dashboard รายรับรายจ่ายส่วนตัว ธีมชายหาด เขียนด้วย vanilla JS ไม่มี dependency">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏖️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="app">
+  <!-- แถบข้าง -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="mark" aria-hidden="true">🏖️</span>
+      <span><b>Beach Budget</b><small>รายรับ–รายจ่ายส่วนตัว</small></span>
+    </div>
+
+    <nav class="nav" id="nav" aria-label="เมนูหลัก"></nav>
+
+    <div class="side-foot">
+      <div class="demo-note">
+        <b>ชุดข้อมูลทดสอบ</b>
+        ตัวเลขทั้งหมดเป็นข้อมูลสมมติ แก้ในหน้าเว็บได้ เก็บไว้ในเบราว์เซอร์คุณเท่านั้น
+      </div>
+      <div class="who" id="who"></div>
+    </div>
+  </aside>
+
+  <!-- เนื้อหา -->
+  <main>
+    <header class="topbar" id="topbar"></header>
+    <div class="page" id="page">
+      <div class="loading"><div class="spinner"></div><p>กำลังโหลดข้อมูล…</p></div>
+    </div>
+  </main>
+</div>
+
+<div class="scrim" id="scrim"></div>
+
+<div class="modal-bg" id="modal-bg" role="dialog" aria-modal="true" aria-label="หน้าต่างรายการ">
+  <div class="modal" id="modal"></div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
